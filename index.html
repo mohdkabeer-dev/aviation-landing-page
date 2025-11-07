@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvitrueSpares - Global Aviation Solutions</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo"> <img src="./public/images/logo.png" alt="logo" width="100" style="margin-left: 2rem;"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#values">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact-page">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Enhanced Floating Contact -->
+  <div class="floating-toggle" id="floatingToggle">
+    <i class="fas fa-comments"></i>
+  </div>
+
+  <div class="floating-contact hidden" id="floatingContact">
+    <div class="contact-btn" data-tooltip="Call Us" onclick="window.open('tel:+971123456789')">
+      <i class="fas fa-phone"></i>
+    </div>
+    <div class="contact-btn" data-tooltip="Email Us" onclick="window.open('mailto:info@avitruespares.com')">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <div class="contact-btn" data-tooltip="WhatsApp" onclick="window.open('https://wa.me/971123456789')">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="contact-btn" data-tooltip="Get Quote"
+      onclick="document.querySelector('#contact-page').scrollIntoView({behavior: 'smooth'})">
+      <i class="fas fa-quote-right"></i>
+    </div>
+  </div>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider" id="home">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <div
+        style="background: linear-gradient(135deg, #1C48B1 0%, #8B5FFF 100%); width: 100%; height: 100%; position: absolute;">
+        <div
+          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 8rem; opacity: 0.1;">
+          ✈</div>
+      </div>
+      <video autoplay muted loop>
+        <source src="https://res.cloudinary.com/dsjlonvdh/video/upload/f_auto,q_auto/v1762547552/aero3_algkpd.mp4" type="video/mp4">
+      </video>
+      <div class="slide-overlay">
+        <div class="slide-content">
+          <div class="slide-badge">✈ &nbsp;  Premium Aviation Solutions</div>
+          <h1>Elevating the Future of Aviation Supply</h1>
+          <p>Certified aviation components with guaranteed authenticity. Your safety is our priority with over 25 years
+            of aerospace excellence and industry-leading quality standards.</p>
+          <div class="slide-buttons">
+            <a href="#products" class="primary-btn btn-with-white-plane">Explore Catalog</a>
+            <a href="#about" class="secondary-btn btn-with-white-plane">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div
+        style="background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%); width: 100%; height: 100%; position: absolute;">
+        <div
+          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 8rem; opacity: 0.1;">
+          🔧</div>
+      </div>
+      <video autoplay muted loop>
+        <source src="https://res.cloudinary.com/dsjlonvdh/video/upload/f_auto,q_auto/v1762547555/aero6_vhhvqj.mp4" type="video/mp4">
+      </video>
+      <div class="slide-overlay">
+        <div class="slide-content">
+          <div class="slide-badge">✈ &nbsp;  Precision Engineering</div>
+          <h1>Global Supply<br>Chain Network</h1>
+          <p>From commercial airlines to private jets, we deliver critical components worldwide with 24/7 AOG support,
+            rapid deployment, and comprehensive maintenance solutions.</p>
+          <div class="slide-buttons">
+            <a href="#contact-page" class="primary-btn btn-with-white-plane">AOG Support</a>
+            <a href="#values" class="secondary-btn btn-with-white-plane">View Coverage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div
+        style="background: linear-gradient(135deg, #059669 0%, #047857 100%); width: 100%; height: 100%; position: absolute;">
+        <div
+          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 8rem; opacity: 0.1;">
+          🏆</div>
+      </div>
+      <video autoplay muted loop>
+        <source src="https://res.cloudinary.com/dsjlonvdh/video/upload/f_auto,q_auto/v1762547537/aero1_gdmfzo.mp4" type="video/mp4">
+      </video>
+      <div class="slide-overlay">
+        <div class="slide-content">
+          <div class="slide-badge">✈ &nbsp; Industry Leadership</div>
+          <h1>Spare Parts That Keep<br>Flights On Time</h1>
+          <p>Innovative parts supply and technical support designed to elevate safety, performance, and sustainability.
+          </p>
+          <div class="slide-buttons">
+            <a href="#products" class="primary-btn btn-with-white-plane">View Innovation</a>
+            <a href="#about-section" class="secondary-btn btn-with-white-plane">Technology Hub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Navigation Dots -->
+    <div class="slide-nav">
+      <span class="nav-dot active" onclick="currentSlide(1)"></span>
+      <span class="nav-dot" onclick="currentSlide(2)"></span>
+      <span class="nav-dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Stats Overlay -->
+    <div class="stats-overlay">
+      <div class="stat-item">
+        <span class="stat-number">50K+</span>
+        <span class="stat-label">Parts Available</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">25+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Reliability</span>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text fade-in-up">
+          <h3>About Us</h3>
+          <p>AVITRUE SPARES DMCC DUBAI has successfully developed forecasting and probability models to replenish
+            inventory with precision and efficiency, ensuring optimal stock levels for our global clientele.</p>
+          <p>Just as humans require regular medical checkups, aircraft require meticulous maintenance to ensure safety,
+            reliability, and peak operational performance. We understand this critical need and deliver solutions that
+            exceed industry standards.</p>
+          <p style="margin-bottom: 3rem;">An aircraft is the sum of its parts, making it mandatory to approach each
+            component with meticulous attention to detail, ensuring safety and precision in every aspect of our
+            operations.</p>
+          <a href="#values" class="btn-primary btn-with-white-plane">Discover Our Services</a>
+        </div>
+        <div class="about-image fade-in-up"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="values">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in-up">Our Core Values</h2>
+        <p class="section-subtitle fade-in-up">Principles that drive our commitment to reliable aviation spare parts
+          supply.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Reliability</h3>
+          <p>Supplying only certified and dependable aircraft spare parts, ensuring operational safety and confidence.
+          </p>
+        </div>
+
+        <div class="service-card fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <h3>On-Time Delivery</h3>
+          <p>A robust global logistics network that guarantees timely delivery of critical components worldwide.</p>
+        </div>
+
+        <div class="service-card fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Quality Assurance</h3>
+          <p>Every part undergoes strict inspection and compliance checks to meet aviation industry standards.</p>
+        </div>
+
+        <div class="service-card fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Customer Support</h3>
+          <p>Dedicated 24/7 support to ensure clients receive the right parts and solutions without delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in-up">Products & Services</h2>
+        <p class="section-subtitle fade-in-up">Comprehensive range of certified aircraft components and aviation
+          solutions</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/541144900/photo/engines-maintenance-in-huge-industrial-hall.jpg?s=612x612&w=0&k=20&c=E_VzokA3hr0ULnqf1ojxKfs5_fnEcgrjpcp60NY2eMs="
+            alt="Aircraft Parts">
+          <h3>Aircraft Parts</h3>
+          <p>OEM, PMA, new, and overhauled parts—engines, gear, hydraulics, and avionics—certified, in stock, and ready
+            to ship.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/2187791337/photo/air-filter-with-turbocharger-in-racing-car-engine.jpg?s=612x612&w=0&k=20&c=fkMFRSPsD99Ot1ixmeUKW_ndCUv7oNFJDlIC0bM_gQo="
+            alt="Consumables">
+          <h3>Consumables</h3>
+          <p>Lubricants, oils, filters, seals, and aviation-grade maintenance supplies—ideal for scheduled service and
+            routine upkeep.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/120217218/photo/side-cargo-hatch-of-plane-open-to-receive-cargo.jpg?s=612x612&w=0&k=20&c=4281Axv_2lROoLVsUDYQ3csmWGY-nole-Kp48Edd-jU="
+            alt="Logistics Support">
+          <h3>Logistics Support</h3>
+          <p>Worldwide shipping, AOG service, consignment programs, and traceable logistics to deliver parts exactly
+            when needed.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/152151184/photo/plane-panel.jpg?s=612x612&w=0&k=20&c=7q9m57ZWl5KcbKvnrmelrFMJ_DCXBpHvFn7wVfrtOr4="
+            alt="Avionics Systems">
+          <h3>Avionics Systems</h3>
+          <p>Advanced avionics, navigation, and instruments—new or overhauled, FAA/EASA certified for reliable aircraft
+            integration.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/1222636238/photo/aircraft-jet-engine-maintenance-in-airplane-hangar.jpg?s=612x612&w=0&k=20&c=4Qb_MSKxCggMuo2XfiUs7NRHrkud855_mgSFsx8cY_Y="
+            alt="Propellers">
+          <h3>Propellers</h3>
+          <p>Certified new or overhauled propellers, brakes, pumps, and rotables—engineered for durability and
+            consistent performance.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683120985500-d82933f1bc2d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGFpcmNyYWZ0JTIwbWFpbnRlbmFuY2V8ZW58MHx8MHx8fDA%3D"
+            alt="Technical Support">
+          <h3>Technical Support</h3>
+          <p>Component sourcing, expert consultation, repair management, and overhaul services—customized to meet
+            operational aircraft needs.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664301030398-721303962f5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM4fHxwaWxvdHN8ZW58MHx8MHx8fDA%3D">
+          <h3>Professional Pilots</h3>
+          <p>Certified professional pilots for commercial, cargo, or private operations—trained in safety and navigation
+            excellence.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+
+        <div class="product-card fade-in-up">
+          <img
+            src="https://media.istockphoto.com/id/1097755676/photo/aircraft-mechanic-using-a-screwdriver-to-open-up-a-panel-on-a-jet-engine-of-a-small-aircraft.jpg?s=612x612&w=0&k=20&c=nZV10sAV8lVW5HDYPabugFHGmrtq9F6BcJUIhFUTKak="
+            alt="Aircraft Maintenance">
+          <h3>Aircraft Maintenance</h3>
+          <p>Full MRO support—diagnostics, replacements, repairs, and compliance checks to ensure optimal flight
+            readiness.</p>
+          <a href="#" class="card-button btn-with-white-plane">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced About Section -->
+  <section class="section about-section" id="about-section">
+    <div class="container">
+      <div class="about-section-content">
+        <div class="about-sec-text fade-in-up">
+          <h3>Leading Aviation Excellence Since 2010</h3>
+          <p>We are a premier aviation solutions provider, specializing in aircraft parts supply, maintenance services,
+            and comprehensive aerospace support. Our commitment to excellence has made us the trusted partner for
+            airlines, operators, and maintenance facilities worldwide.</p>
+          <p>With a global network spanning over 50 countries, we deliver unparalleled service quality and technical
+            expertise that keeps the aviation industry soaring.</p>
+
+          <div class="about-section-features">
+            <div class="about-section-feature">
+              <i class="fas fa-globe"></i>
+              <span>Global Network Coverage</span>
+            </div>
+            <div class="about-section-feature">
+              <i class="fas fa-certificate"></i>
+              <span>Certified Excellence</span>
+            </div>
+            <div class="about-section-feature">
+              <i class="fas fa-clock"></i>
+              <span>24/7 Support</span>
+            </div>
+            <div class="about-section-feature">
+              <i class="fas fa-users"></i>
+              <span>Expert Team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section-image fade-in-up"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats" id="stats">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in-up">Our Impact</h2>
+        <p class="section-subtitle fade-in-up">Numbers that speak to our commitment to aviation excellence</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card fade-in-up">
+          <span class="stat-number number-color" data-target="500">0</span>
+          <span class="stat-label label-color">Happy Clients</span>
+        </div>
+
+        <div class="stat-card fade-in-up">
+          <span class="stat-number number-color" data-target="50">0</span>
+          <span class="stat-label label-color">Countries Served</span>
+        </div>
+
+        <div class="stat-card fade-in-up">
+          <span class="stat-number number-color" data-target="10000">0</span>
+          <span class="stat-label label-color">Parts Delivered</span>
+        </div>
+
+        <div class="stat-card fade-in-up">
+          <span class="stat-number number-color" data-target="99">0</span>
+          <span class="stat-label label-color">Success Rate %</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact-page">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Get in Touch</h2>
+        <p>We're here to answer your inquiries and provide aviation solutions tailored to your needs.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Fill out the form and our team will get back to you within 24 hours.</p>
+
+          <div class="contact-cards">
+            <!-- Email -->
+            <div class="contact-card">
+              <div style="display: flex;justify-content: flex-start; align-items: center;gap: 1rem;">
+                <div class="card-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="card-title">Email Us</h3>
+                <a
+                  href="mailto:info@avitruespares.com?subject=General%20Inquiry&body=Hi%20Avitrue%20Team%2C%0A%0A%5BWrite%20your%20query%20here%5D%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D%0A%5BYour%20Contact%20Number%5D">
+                  <i class="fa fa-external-link" aria-hidden="true" style="font-size: 1.6rem;"></i>
+                </a>
+              </div>
+              <div class="card-para">
+                <p>info@avitruespares.com</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+              <div style="display: flex;justify-content: flex-start; align-items: center;gap: 1rem;">
+                <div class="card-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h3 class="card-title">Call Us</h3>
+                <a href="tel:+971123456789">
+                  <i class="fa fa-external-link" aria-hidden="true" style="font-size: 1.6rem;"></i>
+                </a>
+              </div>
+              <div class="card-para">
+                <p>+971 123 456 789</p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-card">
+              <div style="display: flex;justify-content: flex-start; align-items: center;gap: 1rem;">
+                <div class="card-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="card-title">Visit Us</h3>
+                <a href="https://maps.app.goo.gl/NLvgkpfxbp14rcdQ7" target="_blank">
+                  <i class="fa fa-external-link" aria-hidden="true" style="font-size: 1.6rem;"></i>
+                </a>
+              </div>
+              <div class="card-para">
+                <p>DMCC Business Centre, Dubai, UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <form class="contact-form" onsubmit="handleContactForm(event)">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <select name="service" required>
+              <option value="" disabled selected>Interested In</option>
+              <option>Aircraft Parts</option>
+              <option>Maintenance Services</option>
+              <option>Global Distribution</option>
+              <option>Avionics Solutions</option>
+              <option>Consultation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq" id="faq" style="padding: 6rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title fade-in-up">Frequently Asked Questions</h2>
+        <p class="section-subtitle fade-in-up"
+          style="font-size: 1.2rem; color: var(--text-gray); max-width: 600px; margin: 0 auto;">Get answers to common
+          questions about our services and products</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item fade-in-up">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What types of aircraft parts do you supply?</h3>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We supply a comprehensive range of aircraft parts including propellers, avionics equipment, navigation
+              systems, communication devices, engine components, landing gear parts, and various other certified
+              aircraft spare parts from leading manufacturers worldwide.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in-up">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>Are your aircraft parts certified and genuine?</h3>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all our aircraft parts are certified and genuine. We work directly with authorized manufacturers and
+              suppliers to ensure that every component meets the highest aviation safety standards and regulatory
+              requirements including FAA, EASA, and other international certifications.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in-up">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What is your global delivery capability?</h3>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We provide international shipping to over 50 countries worldwide with expedited delivery options. Our
+              extensive logistics network ensures fast delivery typically within 3-7 business days for in-stock items,
+              with emergency AOG (Aircraft on Ground) support available 24/7.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in-up">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>Do you provide technical support and consultation?</h3>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, our team of aviation experts provides comprehensive technical support, consultation services, and
+              guidance on part selection, compatibility, and installation procedures to ensure optimal performance and
+              regulatory compliance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in-up">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What quality assurance measures do you implement?</h3>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We maintain rigorous quality assurance protocols including comprehensive documentation, traceability
+              records, and compliance with international aviation standards. Every part undergoes thorough inspection
+              and comes with complete certification documentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AvitrueSpares</h3>
+          <p>Your trusted partner in aviation excellence. We provide comprehensive aircraft spare parts and maintenance
+            solutions to keep your fleet soaring safely across the globe.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#values">Product Inventory <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#values">Maintenance Services <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#values">Global Distribution <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#values">Customer Support <i class="fa-solid fa-plane"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#products">Aircraft Parts <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#products">Avionics Systems <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#products">Propellers <i class="fa-solid fa-plane"></i></a></li>
+            <li><a href="#products">Ground Support <i class="fa-solid fa-plane"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter" id="newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates on aircraft parts and aviation solutions.</p>
+          <form class="subscribe-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AvitrueSpares DMCC. All rights reserved. | DMCC Business Centre, Dubai, UAE | +971 123 456 789 |
+          info@avitruespares.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Loading Screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('.loading-screen').classList.add('fade-out');
+      }, 1000);
+    });
+
+    // Enhanced Floating Contact Toggle
+    const floatingToggle = document.getElementById('floatingToggle');
+    const floatingContact = document.getElementById('floatingContact');
+
+    floatingToggle.addEventListener('click', () => {
+      floatingToggle.classList.toggle('active');
+      floatingContact.classList.toggle('hidden');
+
+      if (floatingToggle.classList.contains('active')) {
+        floatingToggle.innerHTML = '<i class="fas fa-times"></i>';
+      } else {
+        floatingToggle.innerHTML = '<i class="fas fa-comments"></i>';
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close mobile menu when clicking on links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Intersection Observer for Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.fade-in-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Counter Animation for Stats
+    const animateCounter = (element, target, duration = 2000) => {
+      let start = 0;
+      const increment = target / (duration / 16);
+
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          element.textContent = target.toLocaleString() + (target >= 1 ? '+' : '');
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(start).toLocaleString();
+        }
+      }, 16);
+    };
+
+    // Stats Counter Observer
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.stat-number');
+          counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            animateCounter(counter, target);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // FAQ Toggle
+    function toggleFAQ(element) {
+      const faqItem = element.parentElement;
+      const answer = faqItem.querySelector('.faq-answer');
+
+      // Close all other FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-answer').classList.remove('active');
+        }
+      });
+
+      // Toggle current FAQ item
+      faqItem.classList.toggle('active');
+      answer.classList.toggle('active');
+    }
+
+    // Newsletter Subscription
+    function handleNewsletter(event) {
+      event.preventDefault();
+      const form = event.target;
+      const email = form.querySelector('input[type="email"]').value;
+      const button = form.querySelector('button');
+
+      // Simulate subscription
+      button.innerHTML = '<i class="fas fa-check"></i>';
+      button.style.background = 'var(--success)';
+
+      setTimeout(() => {
+        button.innerHTML = 'Subscribe';
+        button.style.background = '';
+        form.reset();
+        alert('Thank you for subscribing to our newsletter!');
+      }, 2000);
+    }
+
+    // Contact Form Handler
+    function handleContactForm(event) {
+      event.preventDefault();
+      const form = event.target;
+      const button = form.querySelector('.submit-btn');
+
+      button.innerHTML = 'Sending...';
+      button.disabled = true;
+
+      // Simulate form submission
+      setTimeout(() => {
+        button.innerHTML = 'Sent! <i class="fas fa-check"></i>';
+        setTimeout(() => {
+          button.innerHTML = 'Send Inquiry';
+          button.disabled = false;
+          form.reset();
+          alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+        }, 2000);
+      }, 1500);
+    }
+
+    // Hero Slider Functionality
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.nav-dot');
+    const totalSlides = slides.length;
+    let slideInterval;
+    const slideTimeout = 6000; // 6 seconds per slide
+
+    function showSlide(index) {
+      // Remove active class from all slides and dots
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      // Add active class to current slide and dot
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+
+      // Reset and start progress bar
+      resetProgressBar();
+      startProgressBar();
+    }
+
+    function nextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+      showSlide(currentSlideIndex);
+    }
+
+    function currentSlide(index) {
+      currentSlideIndex = index - 1;
+      showSlide(currentSlideIndex);
+      restartSlideInterval();
+    }
+
+    function startSlideInterval() {
+      slideInterval = setInterval(nextSlide, slideTimeout);
+    }
+
+    function restartSlideInterval() {
+      clearInterval(slideInterval);
+      startSlideInterval();
+    }
+
+    function startProgressBar() {
+      const progressFill = document.getElementById('progressFill');
+      progressFill.style.transition = 'width 6s linear';
+      progressFill.style.width = '100%';
+    }
+
+    function resetProgressBar() {
+      const progressFill = document.getElementById('progressFill');
+      progressFill.style.transition = 'none';
+      progressFill.style.width = '0%';
+    }
+
+    // Initialize slider
+    document.addEventListener('DOMContentLoaded', function () {
+      showSlide(0);
+      startSlideInterval();
+
+      // Pause on hover
+      const heroSlider = document.querySelector('.hero-slider');
+      heroSlider.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+
+      heroSlider.addEventListener('mouseleave', () => {
+        startSlideInterval();
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') {
+          currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+          showSlide(currentSlideIndex);
+          restartSlideInterval();
+        } else if (e.key === 'ArrowRight') {
+          nextSlide();
+          restartSlideInterval();
+        }
+      });
+    });
+
+    // Touch gestures for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', function (e) {
+      touchEndX = e.changedTouches[0].screenX;
+      handleGesture();
+    });
+
+    function handleGesture() {
+      if (touchEndX < touchStartX - 50) {
+        nextSlide();
+        restartSlideInterval();
+      }
+      if (touchEndX > touchStartX + 50) {
+        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlideIndex);
+        restartSlideInterval();
+      }
+    }
+
+    // Smooth Scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerHeight = document.querySelector('.navbar').offsetHeight;
+          const targetPosition = target.offsetTop - headerHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Performance optimization: Throttle scroll events
+    let ticking = false;
+    function updateScrollEffects() {
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateScrollEffects);
+        ticking = true;
+      }
+    });
+
+    // Initialize animations on load
+    window.addEventListener('load', () => {
+      // Trigger initial animations
+      document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+        setTimeout(() => {
+          if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('animate');
+          }
+        }, index * 100);
+      });
+    });
+  </script>
+
+ 
+</body>
+
+</html>
+
