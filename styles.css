@@ -36,7 +36,7 @@ body {
   background-color: #FFFFFF;
 }
 
-/* Custom Scrollbar */
+/* ---------------------- Custom Scrollbar  ----------------------------- */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -50,7 +50,7 @@ body {
   border-radius: 3px;
 }
 
-/* Loading Screen */
+/*  ------------  Loading Screen -------------------------------- */
 .loading-screen {
   position: fixed;
   top: 0;
@@ -89,7 +89,7 @@ body {
   }
 }
 
-/* Enhanced Floating Contact */
+/* ------------------- Floating Contact ------------------------ */
 .floating-contact {
   position: fixed;
   right: 1rem;
@@ -272,7 +272,7 @@ body {
   animation: flyAcross 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-/* Navigation */
+/* ----------------------- Navigation ----------------------------------- */
 .navbar {
   position: fixed;
   top: 0;
@@ -364,7 +364,7 @@ body {
   width: 100%;
 }
 
-/* Mobile Menu */
+/* -------------------------------- Mobile Menu --------------------------------- */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -396,7 +396,7 @@ body {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Hero Slider */
+/* ------------------------ Hero Slider ------------------------------------- */
 .hero-slider {
   height: 100vh;
   position: relative;
@@ -536,7 +536,7 @@ body {
   border-color: #1C48B1;
 }
 
-/* Navigation Dots and Progress */
+/* ------------- Navigation Dots and Progress bAr ----------------------------- */
 .slide-nav {
   position: absolute;
   bottom: 3rem;
@@ -606,7 +606,7 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Animations */
+/* -------------------- Animations ------------------------------- */
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -631,7 +631,18 @@ body {
   }
 }
 
-/* Buttons with enhanced animations */
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+.btn-primary:focus,
+.btn-secondary:focus {
+  outline: 2px solid var(--primary-orange);
+  outline-offset: 2px;
+}
+
+/* ------------------- Buttons animations ------------------- */
 .btn-primary {
   text-decoration: none;
   background: var(--primary-blue);
@@ -673,7 +684,7 @@ body {
   box-shadow: 0 0 15px rgba(114, 53, 255, 0.4);
 }
 
-/* Sections */
+/*  ------------------------------- Sections ------------------------------- */
 .section {
   background: var(--dark-bg);
   padding: 6rem 0;
@@ -705,7 +716,7 @@ body {
   padding: 0 1rem;
 }
 
-/* About Section */
+/* ------------------------------- About Section ------------------------------- */
 .about {
   background: var(--secondary-blue);
 }
@@ -750,7 +761,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Services Grid */
+/* ------------------------------- Services Grid ------------------------------- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -824,7 +835,7 @@ body {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
-/* Products Section */
+/* ------------------------------- Products Section ------------------------------- */
 .products {
   background: whitesmoke;
 }
@@ -943,7 +954,7 @@ body {
   box-shadow: 0 10px 25px rgba(102, 55, 237, 0.3);
 }
 
-/* Enhanced About Section */
+/* ------------------------------- About Section ------------------------------- */
 .about-section {
   background: var(--secondary-blue);
   position: relative;
@@ -1025,7 +1036,7 @@ body {
   background-size: 120%;
 }
 
-/* Stats Section */
+/* ------------------------------- Stats Section ------------------------------- */
 .stats {
   position: relative;
   overflow: hidden;
@@ -1079,7 +1090,7 @@ body {
   color: var(--text-gray);
 }
 
-/* Contact Section */
+/* ------------------------------- Contact Section ------------------------------- */
 .contact-section {
   background: #E7E6E6;
   padding: 5rem 2rem 8rem 2rem;
@@ -1282,7 +1293,7 @@ body {
   box-shadow: 0 15px 35px rgba(102, 55, 237, 0.4);
 }
 
-/* FAQ Section */
+/* ------------------------------- FAQ Section ------------------------------- */
 .faq {
   background: whitesmoke;
 }
@@ -1358,7 +1369,7 @@ body {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
-/* Footer */
+/* ------------------------------- Footer ------------------------------- */
 .footer {
   padding: 4rem 0 2rem;
   border-top: 1px solid var(--border-gray);
@@ -1507,7 +1518,7 @@ body {
   font-size: clamp(0.8rem, 1.5vw, 0.9rem);
 }
 
-/* Animation Classes */
+/*  -------------------------------Animation ------------------------------- */
 .fade-in-up {
   opacity: 0;
   transform: translateY(50px);
@@ -1528,7 +1539,7 @@ body {
   opacity: 1;
 }
 
-/* Enhanced Responsive Design */
+/* ------------------------------- Responsive Design ------------------------------- */
 @media (max-width: 1200px) {
   .container {
     padding: 0 2rem;
@@ -1842,14 +1853,4 @@ body {
   .faq-answer p {
     padding: 0 1rem;
   }
-}
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus,
-.btn-primary:focus,
-.btn-secondary:focus {
-  outline: 2px solid var(--primary-orange);
-  outline-offset: 2px;
 }
